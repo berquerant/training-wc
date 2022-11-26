@@ -9,7 +9,7 @@ select="${thisd}/select.sh"
 log "Build executables"
 make
 
-for x in go python clojure zig rust ; do
+for x in go python clojure zig rust c ; do
     log "Start test for ${x}..."
     $e2e $($select $x)
 done
