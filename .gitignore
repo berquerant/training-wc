@@ -1,0 +1,7 @@
+.mypy_cache/
+__pycache__/
+.repeproject/
+tmp/
+dist/
+.clj-kondo/
+.lsp/

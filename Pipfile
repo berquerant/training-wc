@@ -1,0 +1,12 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pkommand = {ref = "0.3.4", git = "https://github.com/berquerant/pkommand.git"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

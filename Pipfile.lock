@@ -1,0 +1,25 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "f7a2eda50689d1797423bc7671ce206223ff3b30736bdb31a3a20791115ccbb8"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.11"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "pkommand": {
+            "git": "https://github.com/berquerant/pkommand.git",
+            "ref": "e189760affb43734180b256bc147e40ff38c8599"
+        }
+    },
+    "develop": {}
+}
