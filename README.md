@@ -35,3 +35,4 @@ See [testing](testing/run.py).
 - [rust](rust-wc/README.md)
 - [python](py-wc/README.md)
 - [zig](zig-wc/README.md)
+- [c](c-wc/README.md)
