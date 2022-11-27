@@ -9,16 +9,13 @@ import (
 
 func main() {
 	var (
-		scanner = bufio.NewScanner(os.Stdin)
-
-		line  int
-		word  int
-		bytes int
+		scanner           = bufio.NewScanner(os.Stdin)
+		line, word, bytes uint64
 	)
 
 	for scanner.Scan() {
 		line++
-		bytes += len(scanner.Bytes()) + 1 // newline
+		bytes += uint64(len(scanner.Bytes())) + 1 // newline
 		for _, x := range strings.Split(scanner.Text(), " ") {
 			if x != "" {
 				word++
