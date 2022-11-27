@@ -8,7 +8,7 @@ import sys
 import time
 from dataclasses import asdict, dataclass
 from functools import reduce
-from typing import IO, Any, Callable, Generic, TypeVar, cast
+from typing import IO, Any, Callable, Generic, TypeVar
 
 import pkommand
 
