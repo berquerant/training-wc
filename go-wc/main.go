@@ -22,6 +22,10 @@ func main() {
 			}
 		}
 	}
+	if err := scanner.Err(); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
+	}
 
 	fmt.Println(line, word, bytes)
 }
