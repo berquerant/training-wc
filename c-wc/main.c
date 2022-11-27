@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 int main(int argc, char **argv) {
-  int c, line = 0, word = 0, byte = 0;
-  bool prev_is_space = false, is_space = false, is_tail = false,
-       met_char = false;
+  int c;
+  unsigned int line = 0, word = 0, byte = 0;
+  bool prev_is_space = false, is_space = false, is_tail = false;
 
   while ((c = getchar()) != EOF) {
     byte++;
@@ -20,9 +20,6 @@ int main(int argc, char **argv) {
 
     prev_is_space = is_space;
     is_tail = true;
-    if (!met_char && !is_space) {
-      met_char = true;
-    }
   }
 
   printf("%d %d %d\n", line, word, byte);
